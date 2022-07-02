@@ -30,7 +30,7 @@ const News = (props) => {
     };
     
     useEffect(() => {
-        document.title = `${capitalize(props.category)} - News Stop`;
+        document.title = `${capitalize(props.category)} - News Snack`;
         updateNews();
         //eslint-disable-next-line
     }, []);
@@ -58,7 +58,7 @@ const News = (props) => {
   return (
     <>
       <h2 className="text-center" style={{ margin: "35px 0", marginTop: "90px" }}>
-        News Stop - One stop for all types of news.
+        News Snack - Get Your Daily Bite of News Here.
       </h2>
       {loading && <Spinner />}
       <InfiniteScroll
